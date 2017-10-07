@@ -5,7 +5,7 @@ def list():
     return mylist
 list()
 
-gesorteerd = (sorted(list()))
+gesorteerd = sorted(list())
 kleinste = map(int, list())
 grootste = map(int, list())
 
@@ -15,8 +15,11 @@ def gemiddelde():
     som = sumGetallen / lengte
     return som
 
-print('de gesorteerde list is {}'.format(gesorteerd))
-print('het kleinste getal is {}'.format(min(kleinste)))
-print('het grootste getal is {}'.format(max(grootste)))
-print('de lengte van de lijst is {}'.format(len(list())))
-print('het gemiddelde van de lijst is {}'.format(gemiddelde()))
+sumGetallen = sum(map(int, list()))
+
+print('De gesorteerde lijst is:             {}'.format(gesorteerd))
+print('Het kleinste getal is:               {}'.format(min(kleinste)))
+print('Het grootste getal is:               {}'.format(max(grootste)))
+print('De lengte van de lijst is:           {}'.format(len(list())))
+print('De som van de lijst is:              {}'.format(sumGetallen))
+print('Het gemiddelde van de lijst is:      {}'.format(gemiddelde()))
