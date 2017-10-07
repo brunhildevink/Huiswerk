@@ -15,4 +15,3 @@ def seizoen():
     return maand
 
 seizoen()
-
