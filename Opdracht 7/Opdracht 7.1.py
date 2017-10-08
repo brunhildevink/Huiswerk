@@ -1,23 +1,15 @@
 def som():
 
+    lijst = []
     nummer = eval(input('geef een nummer'))
+    lijst.append(nummer)
 
-    while nummer >= 1:
+    while nummer != 0:
         nummer = eval(input('geef een nummer'))
+        lijst.append(nummer)
 
     while nummer == 0:
-        listNummer = [nummer]
-        print('Er zijn  ingevoerd. De som is: {}'.format(sum(listNummer)))
-        list = str(nummer).split()
+        print('Er zijn {} getallen ingevoerd. De som is: {}'.format(len(lijst), sum(lijst)))
         break
 
-
-
-def somOpgeteld(som):
-
-    nummer = 0
-    opgeteld = sum(int(nummer))
-
-
 som()
-#somOpgeteld(som)
