@@ -9,7 +9,7 @@ def som():
         lijst.append(nummer)
 
     while nummer == 0:
-        print('Er zijn {} getallen ingevoerd. De som is: {}'.format(len(lijst), sum(lijst)))
+        print('Er zijn {} getallen ingevoerd. De som is: {}'.format((len(lijst) - 1), sum(lijst)))
         break
 
 som()
