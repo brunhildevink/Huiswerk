@@ -1,0 +1,5 @@
+infile = open('ticker.txt', 'r')
+content = infile.readlines()
+a = str(content).split(', ')
+b = str(a).split(':')
+print(dict(b))
