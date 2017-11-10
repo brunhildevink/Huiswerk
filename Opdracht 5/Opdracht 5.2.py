@@ -1,12 +1,7 @@
-def kaartnummers():
+infile = open('kaartnummers.txt')
 
-        infile = open('kaartnummers.txt', 'r')
-        kaartnummer = infile.read(6)
-        str(infile).split()
-        persoon = (infile.read()[2:12])
-        infile = open('kaartnummersOrganised.txt', 'w')
-        infile.write(('{} heeft kaartnummer: {}'.format(persoon, kaartnummer)))
-        infile.close()
+for naam in infile.readlines():
+    temp = naam.split(sep=',')
+    print(temp[1].strip('\n ') + " heeft kaartnummer: " + temp[0])
 
-kaartnummers()
-
+infile.close()

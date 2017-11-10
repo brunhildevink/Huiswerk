@@ -1,18 +1,15 @@
-def letterlijst(lijst):
+def wijzig(letterlijst):
 
-    lijst = ['a', 'b', 'c']
+    print(letterlijst)
 
-    print(lijst)
+    letterlijst.pop()
+    letterlijst.pop()
+    letterlijst.pop()
+    letterlijst.append("d")
+    letterlijst.append("e")
+    letterlijst.append("f")
 
-    lijst.remove('a')
-    lijst.remove('b')
-    lijst.remove('c')
-    lijst.append('d')
-    lijst.append('e')
-    lijst.append('f')
+    print(letterlijst)
 
-    print(lijst)
-
-lijst = []
-
-letterlijst(lijst)
+letterlijst = ['a', 'b', 'c']
+wijzig(letterlijst)

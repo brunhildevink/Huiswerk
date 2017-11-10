@@ -1,11 +1,18 @@
-day = {'Thu', 'Thu', 'Thu', 'Thu', 'Thu'}
-dayNum = {'10', '10', '10', '10', '10'}
-month = {'Mar', 'Mar', 'Mar', 'Mar', 'Mar'}
-year = {'2016', '2016', '2016', '2016', '2016'}
-time = {'10:45:52', '10:46:04', '10:47:27', '10:48:33', '10:48:42'}
-name = {'Miranda', 'Piet', 'Sasha', 'Karel', 'Kemal'}
+import time
+import os.path
 
-infile = open('hardlopers.txt', 'w')
+timeNow = time.strftime("%A %d %b %y at %H:%M, ")
 
+def nieuweLoper(naam):
 
-print("{:3} {:2} {:3} {:4},   {:8}, {:10}".format(day,dayNum,month,year,time,name))
+    if os.path.exists("hardlopers.txt") == True:
+        data = open("hardlopers.txt", "a")
+        data.writelines("{}{}\n".format(timeNow, naam))
+        data.close()
+    else:
+        data = open("hardlopers.txt", "w")
+        data.writelines("{}{}\n".format(timeNow, naam))
+        data.close()
+
+naam = input("Wat is de naam van de loper: ")
+nieuweLoper(naam)

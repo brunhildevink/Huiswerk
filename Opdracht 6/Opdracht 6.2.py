@@ -1,14 +1,9 @@
-def boodschappen():
+#userList = eval(input("Geef lijst met minimaal 10 strings: "))
+userList = ["boter", "kaas", "bier", "pizza", "thee", "drop", "koek", "cola", "boterham", "stamppot"]
+newList = []
 
-    lijst = input('Geef een lijst met minimaal 10 items: ')
-    lijstSplitted = lijst.split(' ')
+for i in userList:
+    if len(i) == 4:
+        newList.append(i)
 
-    if len(lijstSplitted) >= 10:
-        for a in lijstSplitted:
-            if len(a) == 4:
-                print(a)
-
-    else:
-        print('Het moet minimaal 10 items bevatten!')
-
-boodschappen()
+print("De nieuw-gemaakte list met alle vier-letter strings is: {}" .format(newList))

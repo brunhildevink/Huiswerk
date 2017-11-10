@@ -13,5 +13,3 @@ def randomSom():
     return randomSom()
 
 randomSom()
-
-

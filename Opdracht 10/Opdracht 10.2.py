@@ -7,15 +7,14 @@ def verdubbelB():
 verdubbelB()
 print(b)
 
-
+# ---------------------------------------#
 
 
 import time
 print(time.strftime(("%H:%M:%S")))
 
 
-
-
+# ---------------------------------------#
 
 
 def f(y):

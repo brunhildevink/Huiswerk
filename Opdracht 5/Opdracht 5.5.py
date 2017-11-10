@@ -1,4 +1,4 @@
-def gemiddelde(zin):
+def gemiddelde():
     zin = input('voer je zin in: ')
     woorden = len(zin.split())
     gemiddelde = len(zin) / woorden
@@ -7,5 +7,5 @@ def gemiddelde(zin):
 zin = ""
 woorden = ""
 
-print(gemiddelde(woorden))
+print(gemiddelde())
 

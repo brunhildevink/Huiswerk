@@ -1,7 +1,11 @@
-getallenlijst = [1, 2, 3, 4, 5]
-mySum = 0
+def som():
 
-for num in getallenlijst:
-    mySum += num
+    getallenlijst = [1, 2, 3, 4, 5]
+    mySum = 0
 
-print(mySum)
+    for num in getallenlijst:
+        mySum += num
+
+    print(mySum)
+
+som()

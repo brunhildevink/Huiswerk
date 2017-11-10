@@ -1,8 +1,12 @@
-lang_genoeg = 120
-lengte = eval(input('hoe lang ben je?'))
+def lang_genoeg():
 
-if lengte >= lang_genoeg:
-    print('je bent lang genoeg')
+    lang_genoeg = 120
+    lengte = eval(input('hoe lang ben je?'))
 
-else:
-    print('je bent niet lang genoeg')
+    if lengte >= lang_genoeg:
+        print('je bent lang genoeg')
+
+    else:
+        print('je bent niet lang genoeg')
+
+lang_genoeg()
