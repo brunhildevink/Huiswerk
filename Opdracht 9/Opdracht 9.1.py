@@ -1,4 +1,4 @@
-def kosten_pp():
+def kosten_perPersoon():
     while True:
         try:
             personen = int(input('Met hoeveel personen?'))
@@ -10,17 +10,15 @@ def kosten_pp():
         except ValueError:
             print('Oeps! Dat is geen geldig nummer, probeer het nog eens.')
 
-        except ZeroDivisionError:
-            print('Oeps! Je kan niet door 0 delen, probeer het nog eens.')
-
         except:
             print('Oeps! Ongeldige invoer, probeer het nog eens.')
 
 
 kosten = 4356
-personen = kosten_pp()
-print('De kosten bedragen {} euro per persoon.'.format((kosten / personen)))
+personen = kosten_perPersoon()
 
+try:
+    print('De kosten bedragen {} euro per persoon.'.format((kosten / personen)))
 
-
-
+except ZeroDivisionError:
+    print('Oeps! Je kan niet door 0 delen, probeer het nog eens.')
